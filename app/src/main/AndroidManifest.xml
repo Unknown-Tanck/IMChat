@@ -66,8 +66,8 @@
         <activity android:name="com.softtanck.imchat.activity.Sliding_Main" />
 
         <activity android:name="com.softtanck.imchat.activity.TabhostActivity" />
-        <!--欢迎界面-->
-        <!--<activity android:name="com.softtanck.imchat.activity.Welcome" />-->
+        <!--聊天界面-->
+        <activity android:name="com.softtanck.imchat.activity.MainActivity" />
 
         <service
             android:name="io.rong.imlib.ipc.RongService"

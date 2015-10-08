@@ -85,16 +85,12 @@ public class SlidingContentFragment extends Fragment {
     public void BindFragment() {
 
         fragments = new ArrayList<Fragment>();
-        fragments.add(new TabFragment_1());
-        fragments.add(new TabFragment_2());
-        fragments.add(new TabFragment_3());
+        fragments.add(new MessageFragment());
+        fragments.add(new ContractFragment());
+        fragments.add(new DynamicFragment());
 
-//		View view = LayoutInflater.from(context).inflate(R.layout.sliding_content_fragment, null);
-        Log.d("mybug", "currentView:" + currentView);
-
-        View view = (LinearLayout) currentView.findViewById(R.id.sliding_content_tab_layout);
+        View view = currentView.findViewById(R.id.sliding_content_tab_layout);
         rgs = (RadioGroup) view.findViewById(R.id.tabs_rg);
-
 
         FragmentTabAdapter tabAdapter = new FragmentTabAdapter(this, fragments, R.id.tab_content, rgs);
 

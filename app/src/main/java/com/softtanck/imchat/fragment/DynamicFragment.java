@@ -9,23 +9,17 @@ import android.view.ViewGroup;
 
 import com.softtanck.imchat.R;
 
-public class TabFragment_1 extends Fragment {
+/**
+ * 动态
+ */
+public class DynamicFragment extends Fragment {
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // TODO Auto-generated method stub
-
-
-        return inflater.inflate(R.layout.sliding_content_tab1, container, false);
+        return inflater.inflate(R.layout.sliding_content_dynamic, container, false);
     }
-
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        // TODO Auto-generated method stub
-        super.onActivityCreated(savedInstanceState);
-    }
-
 
 }

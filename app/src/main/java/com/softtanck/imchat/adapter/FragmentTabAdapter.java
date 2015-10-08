@@ -4,6 +4,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.Fragment;
 import android.widget.RadioGroup;
 
+import com.softtanck.imchat.R;
+
 import java.util.List;
 
 
@@ -47,12 +49,8 @@ public class FragmentTabAdapter implements RadioGroup.OnCheckedChangeListener {
             if (rgs.getChildAt(i).getId() == checkedId) {
                 Fragment fragment = fragments.get(i);
                 FragmentTransaction ft = obtainFragmentTransaction(i);
-
                 getCurrentFragment().onPause(); // 暂停当前tab
-//                getCurrentFragment().onStop(); // 暂停当前tab
-
                 if (fragment.isAdded()) {
-//                    fragment.onStart(); // 启动目标tab的onStart()
                     fragment.onResume(); // 启动目标tab的onResume()
                 } else {
                     ft.add(fragmentContentId, fragment);
@@ -99,9 +97,9 @@ public class FragmentTabAdapter implements RadioGroup.OnCheckedChangeListener {
     private FragmentTransaction obtainFragmentTransaction(int index) {
         FragmentTransaction ft = fragment.getFragmentManager().beginTransaction();
         // 设置切换动画
-//        if(index > currentTab){
+//        if (index > currentTab) {
 //            ft.setCustomAnimations(R.anim.slide_left_in, R.anim.slide_left_out);
-//        }else{
+//        } else {
 //            ft.setCustomAnimations(R.anim.slide_right_in, R.anim.slide_right_out);
 //        }
         return ft;

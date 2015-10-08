@@ -4,14 +4,14 @@
     android:layout_height="fill_parent"
     android:background="#FFFFFF"
     android:orientation="vertical"
-    android:weightSum="1" >
+    android:weightSum="1">
 
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="0dp"
         android:layout_weight="0.09"
         android:background="#63B8FF"
-        android:gravity="center_vertical" >
+        android:gravity="center_vertical">
 
         <com.softtanck.imchat.view.imageview.RoundImageView
             android:id="@+id/roundImageView1"
@@ -25,14 +25,12 @@
         <ToggleButton
             android:layout_width="120dp"
             android:layout_height="30dp"
-             android:layout_alignTop="@+id/roundImageView1"
+            android:layout_alignTop="@+id/roundImageView1"
             android:layout_centerHorizontal="true"
-            android:checked="true"
             android:background="@drawable/btn_toggle"
-            android:textOn=""
+            android:checked="true"
             android:textOff=""
-            />
-
+            android:textOn="" />
 
 
         <Button
@@ -40,17 +38,16 @@
             android:layout_height="30dp"
             android:layout_alignParentRight="true"
             android:layout_alignTop="@+id/roundImageView1"
-            android:layout_marginRight="10dp"
             android:background="@android:color/transparent"
             android:text="三"
             android:textColor="#FFFFFF"
             android:textSize="18sp" />
     </RelativeLayout>
 
-    <FrameLayout
+    <ListView
+        android:id="@+id/content_msg_lv"
         android:layout_width="fill_parent"
         android:layout_height="0dp"
-        android:layout_weight="0.91" >
-    </FrameLayout>
+        android:layout_weight="0.91" />
 
 </LinearLayout>
