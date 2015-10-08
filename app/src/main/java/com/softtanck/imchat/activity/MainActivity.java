@@ -35,7 +35,6 @@ import android.widget.Toast;
 import io.rong.imlib.RongIMClient;
 import io.rong.imlib.model.Message;
 import io.rong.imlib.model.MessageContent;
-import io.rong.message.LocationMessage;
 import io.rong.message.TextMessage;
 import io.rong.message.VoiceMessage;
 
@@ -77,7 +76,7 @@ public class MainActivity extends AppCompatActivity implements RongIMClient.OnRe
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_chat);
 
         listView = (ListView) findViewById(R.id.lv);
         editText = (EditText) findViewById(R.id.et);

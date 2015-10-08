@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <com.softtanck.imchat.view.imageview.RoundImageView
+        android:id="@+id/image"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/tmp_head_1" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_edittext"
+        android:hint="QQ号/手机号/邮箱"
+        android:paddingBottom="9dp"
+        android:paddingLeft="14dp"
+        android:paddingTop="9dp"
+
+        android:textSize="15sp"
+
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginTop="0.3dp"
+        android:background="@drawable/login_edittext"
+        android:hint="密码"
+        android:paddingBottom="9dp"
+        android:paddingLeft="14dp"
+        android:paddingTop="9dp"
+        android:password="true"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/login_btn1"
+        android:onClick="Login"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:text="登录"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="14dp"
+        android:background="@android:color/transparent"
+        android:text="无法登录？"
+        android:textColor="@drawable/login_btn2"
+        android:textSize="14sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="14dp"
+        android:background="@android:color/transparent"
+        android:text="新用户"
+        android:textColor="@drawable/login_btn2"
+        android:textSize="14sp" />
+</RelativeLayout>

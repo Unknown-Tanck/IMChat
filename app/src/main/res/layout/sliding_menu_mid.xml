@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.softtanck.imchat.view.KJScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:scrollbars="none">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/slidingmenu_table"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingLeft="23dp"
+            android:paddingTop="6dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="26dp"
+                android:src="@drawable/icon_1" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:padding="3dp"
+                android:text="开通会员"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slidingmenu_table"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingLeft="23dp"
+            android:paddingTop="6dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="26dp"
+                android:src="@drawable/icon_2" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:padding="3dp"
+                android:text="QQ钱包 "
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/slidingmenu_table"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingLeft="23dp"
+            android:paddingTop="6dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="26dp"
+                android:src="@drawable/icon_1" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:padding="3dp"
+                android:text="网上营业厅"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/slidingmenu_table"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingLeft="23dp"
+            android:paddingTop="6dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="26dp"
+                android:src="@drawable/icon_3" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:padding="3dp"
+                android:text="个性装扮"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="0.1dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="3dp"
+            android:background="#3B3B3B" />
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slidingmenu_table"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingLeft="23dp"
+            android:paddingTop="6dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="26dp"
+                android:src="@drawable/icon_4" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:padding="3dp"
+                android:text="我的收藏"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slidingmenu_table"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingLeft="23dp"
+            android:paddingTop="6dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="26dp"
+                android:src="@drawable/icon_5" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:padding="3dp"
+                android:text="我的相册"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/slidingmenu_table"
+            android:clickable="true"
+            android:gravity="center_vertical"
+            android:paddingBottom="6dp"
+            android:paddingLeft="23dp"
+            android:paddingTop="6dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="26dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icon_6" />
+
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:padding="3dp"
+                android:text="我的文件"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+        </TableRow>
+    </TableLayout>
+
+</com.softtanck.imchat.view.KJScrollView>

@@ -222,6 +222,8 @@ public class ChatAdapter extends BaseAdapter {
 
         handleTime(message, viewHoder, position);
 
+        //handler UserName and UserHead.
+
         if (messageContent instanceof TextMessage) { // 文本消息
             handleTextMessage(message, viewHoder, position);
         } else if (messageContent instanceof ImageMessage) {// 图片消息
