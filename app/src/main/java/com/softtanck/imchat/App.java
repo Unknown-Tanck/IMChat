@@ -5,10 +5,12 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
 import com.baidu.mapapi.SDKInitializer;
 import com.nostra13.universalimageloader.core.ImageLoader;
+import com.softtanck.imchat.database.DbHelper;
 
 import io.rong.imlib.RongIMClient;
 
@@ -23,6 +25,7 @@ public class App extends Application {
     public ImageLoaderConfig imageLoaderConfig;
     private static App mApp;
     private SDKReceiver mReceiver;
+    public DbHelper dbHelper;
 
     @Override
     public void onCreate() {
@@ -46,6 +49,14 @@ public class App extends Application {
         imageLoader = ImageLoader.getInstance();//图片加载器
         imageLoaderConfig = new ImageLoaderConfig(this);
         imageLoader.init(imageLoaderConfig.getConfig());//初始化ImageLoader
+        initDb();
+    }
+
+    /**
+     * 初始化数据库
+     */
+    private void initDb() {
+        dbHelper = new DbHelper(getApplicationContext());
     }
 
     public static App getInstance() {

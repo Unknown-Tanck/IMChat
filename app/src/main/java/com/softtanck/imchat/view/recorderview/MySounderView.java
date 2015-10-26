@@ -10,27 +10,54 @@ import android.widget.TextView;
 
 import com.softtanck.imchat.utils.SoundMeter;
 
+/**
+ * Create By Tanck. 2015/7/15
+ */
 public class MySounderView extends TextView {
 
+    /**
+     * 是否按下
+     */
     private boolean isPressed;
 
+    /**
+     * 是否取消[包含手指移除视图外部]
+     */
     private boolean isCancled;
 
+    /**
+     * 是否双击
+     */
     private boolean isDoubleClicked;
 
     private boolean isClicked;
 
+    /**
+     * 默认延时
+     */
     private int DEFALUT_TIME = 500;
 
     private int mHeight;
     private int mWidth;
 
+    /**
+     * 上一次按下的时间
+     */
     private long oldTime;
 
+    /**
+     * 当前的时间
+     */
     private long currentTime;
 
+    /**
+     * 录音
+     */
     private SoundMeter msounder;
 
+    /**
+     * 接口
+     */
     private OnRecordListener listener;
 
     public void setOnRecordListener(OnRecordListener listener) {
